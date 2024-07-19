@@ -1,0 +1,117 @@
+.nav {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #012622;
+  color: #ece5f0;
+  /* border: 2px solid red; */
+}
+
+.nav-logo {
+  width: 45px;
+  height: 45px;
+  margin-left: 8%;
+}
+
+.nav-logo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+}
+
+.nav-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: x-large;
+}
+
+.nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 5%;
+  border-radius: 25px;
+  background-color: #e98a15;
+  border: 5px solid #59114d;
+}
+
+.nav-button img {
+  width: 32px;
+  height: 32px;
+  border-radius: 25px;
+  background-color: #e98a15;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 110px;
+  height: 85px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  margin: 4px;
+  z-index: 2;
+  top: 50px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.dropdown-content ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 5px;
+}
+
+.dropdown-content ul li {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  padding: 3px;
+  border-radius: 25px;
+  margin: 2px;
+  background-color: #59114d;
+  border: 3px solid #e98a15;
+}
+
+.dropdown-content ul li:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 0 0 15px 5px #59114d;
+}
+
+.dropdown-content ul li .nav-link {
+  color: #ece5f0;
+}
+
+#dropdownBtn:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  z-index: 2;
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 700px) {
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-button {
+    margin-right: auto;
+  }
+}

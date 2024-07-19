@@ -1,0 +1,131 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  height: 80vh;
+  padding: 0;
+  /* border: 2px solid violet; */
+}
+
+.quote-label {
+  font-family: "Montserrat", sans-serif;
+  color: #59114d;
+  margin-bottom: 1vh;
+}
+
+.quote-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 55vw;
+  height: 40vh;
+  margin-bottom: 20px;
+  /* border: 2px solid red; */
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 4vh;
+  width: 50vw;
+  height: 23vh;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #59114d;
+  color: #ece5f0;
+  font-size: x-large;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: rgb(38, 57, 77) 0px 16px 30px -10px;
+  /* border: 2px solid rgb(101, 115, 14); */
+}
+
+.quote-author {
+  position: absolute;
+  bottom: 8px;
+  right: 30px;
+  font-size: large;
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  text-shadow: 4px 4px 7px grey;
+  /* border: 2px solid rgb(10, 186, 235); */
+}
+
+.quote-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25vw;
+  height: 8vh;
+  /* border: 2px solid green; */
+}
+
+#btn_generate {
+  width: 10vw;
+  height: 5vh;
+  margin-left: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #e98a15;
+  color: #59114d;
+  font-size: large;
+  font-weight: 600;
+  box-shadow: 0 5px #999;
+}
+
+#btn_subscribe {
+  width: 10vw;
+  height: 5vh;
+  margin-right: 15px;
+  border-radius: 15px;
+  background-color: #e98a15;
+  font-size: large;
+  font-weight: 600;
+  box-shadow: 0 5px #999;
+}
+
+#btn_generate:active,
+#btn_subscribe:active {
+  background-color: #e98a15;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#btn_generate:hover,
+#btn_subscribe:hover {
+  background-color: #eda143;
+}
+
+.subscribe-link {
+  color: #59114d;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+  .quote-box {
+    display: flex;
+    align-items: center;
+  }
+
+  .quote-author {
+    position: absolute;
+    right: 40%;
+  }
+
+  .quote-buttons {
+    flex-direction: column;
+    justify-content: center;
+    height: 12vh;
+  }
+
+  #btn_generate,
+  #btn_subscribe {
+    width: 15vw;
+    margin: 3px;
+  }
+}

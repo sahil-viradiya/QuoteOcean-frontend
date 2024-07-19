@@ -1,0 +1,156 @@
+.main-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  height: 80vh;
+  padding: 0;
+  /* border: 2px solid violet; */
+}
+
+.login-label {
+  font-family: "Montserrat", sans-serif;
+  color: #59114d;
+  font-size: large;
+}
+
+.login-box {
+  display: flex;
+  width: 60vw;
+  height: 50vh;
+  /* border: 2px solid green; */
+}
+
+.input-box {
+  width: 30vw;
+  /* border: 2px solid rgb(28, 212, 245); */
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 18px;
+  height: 90%;
+}
+
+.label_input_login {
+  margin-bottom: 3px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.login-form input {
+  margin-bottom: 10px;
+  width: 90%;
+  height: 4vh;
+  border-radius: 5px;
+}
+
+.login-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  /* border: 2px solid rgb(224, 32, 11); */
+}
+
+.login-image .img-fluid {
+  position: relative;
+  top: 20px;
+  width: 28vw;
+  border-radius: 81% 19% 32% 68% / 43% 54% 46% 57%;
+}
+
+.login-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vh;
+  width: 25vw;
+  height: 8vh;
+  /* border: 2px solid rgb(128, 0, 36); */
+}
+
+#btn_login {
+  width: 10vw;
+  height: 5vh;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #e98a15;
+  color: #59114d;
+  font-size: large;
+  font-weight: 600;
+  box-shadow: 0 5px #999;
+}
+
+#btn_login:active {
+  background-color: #e98a15;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#btn_login:hover {
+  background-color: #eda143;
+}
+
+@media screen and (max-width: 700px) {
+  .content {
+    height: 100vh;
+  }
+
+  .main-login {
+    width: 70vw;
+    height: 90vh;
+  }
+
+  .login-label h1 {
+    font-size: large;
+  }
+
+  .login-box {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 90%;
+  }
+
+  .login-image {
+    width: 50%;
+    position: relative;
+    top: 0;
+  }
+
+  .login-image .img-fluid {
+    position: static;
+    top: 20px;
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 18px;
+  }
+
+  .input-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 50vh;
+    /* border: 2px solid rgb(28, 212, 245); */
+  }
+
+  .label_input_login {
+    width: 45%;
+    margin-bottom: 2px;
+  }
+
+  input {
+    margin-bottom: 5px;
+    width: 80%;
+    height: 3vh;
+    border-radius: 5px;
+  }
+}
